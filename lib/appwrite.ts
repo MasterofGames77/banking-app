@@ -15,6 +15,7 @@ export async function createSessionClient() {
   }
 
   client.setSession(session.value);
+  //client.setJWT(session.value); // Correctly set the JWT
 
   return {
     get account() {
